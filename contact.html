@@ -7,33 +7,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section>
-        <nav class="bg-gray-900 text-white p-4 fixed w-full top-0 z-10">
-            <div class="container mx-auto flex justify-between items-center">
-                
-                <img src="Assets/image/finallogo.png" alt="logo" class="h-50 w-20">
-    
-            
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="text-orange-500 hover:text-orange-400">Home</a></li>
-                    <li><a href="#" class="text-orange-500 hover:text-orange-400">About</a></li>
-                    <li><a href="#" class="text-orange-500 hover:text-orange-400">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="text-orange-500 hover:text-orange-400 flex items-center px-2 py-1">Pages ▼</a>
-                    <div class="dropdown-content">
-                        <a href="con" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
-                    </div>
-                </li>
-                <li><a href="index.html" class="text-white bg-orange-500 px-4 py-2 rounded-full hover:bg-orange-600 flex items-center gap-2">SignUp <span class="ml-1">→</span></a></li>
-            </ul>
-        </div>
-        </div>
-            </div>
-        </nav>
-    </section>
+  <section> 
+    <div>
+    <nav class=" md:flex justify-between items-center bg-gray-800" > 
+      <div class="container mx-auto" >  
+      <!--logo --> 
+        <img src="Assets/image/finallogo.png " class="h-16 w-16 items-start" >  </a>
+      </div>
+        <!--ling --> 
+           
+      <div  class="container mx-auto flex justify-between items-center "> 
+       <a href="" class="text-orange-400 text-lg text-bold hover:text-orange-400"> home </a> 
+       <a href="#About" class="text-white text-lg text-bold hover:text-orange-400"> About </a> 
+       <a href="" class="text-white text-lg text-bold hover:text-orange-400"> Services </a>
+       <a href="" class="text-white text-lg text-bold hover:text-orange-400"> menu </a> 
+
+       <div class="relative">
+       <!-- Hidden Checkbox to Control the Dropdown -->
+       <input type="checkbox" id="dropdownToggle" class="peer hidden">
+       <!-- Dropdown Button -->
+       <label for="dropdownToggle" class="px-4 text-white rounded cursor-pointer block">
+       Pages ▼
+       </label>
+       <!-- Dropdown Menu -->
+       <ul class="absolute left-0 mt-2 bg-gray-800 shadow-lg rounded-lg w-40 hidden peer-checked:block">
+       <li><a href="./contact.html" class="block px-4 py-2 hover:bg-gray-500 text-white">Contact</a></li> 
+       
+       </div>
+
+        <button class="rounded-lg bg-orange-500 text-white border-2 border-orange-500 px-4 py-3 mr-5">Signup</button>
+
+     </nav>   
+</div>
+</section>  
+
     <section class="flex flex-col items-center justify-center min-h-screen text-center px-4">
         <div class="max-w-4xl">
-          <img src="Assets/image/" alt="Delicious Food" class="mx-auto mb-6 rounded-lg shadow-lg">
+          <img src="Assets/image/carousel-2.jpg" alt="Delicious Food" class="mx-auto mb-6 rounded-lg shadow-lg">
           <h1 class="text-4xl font-bold mb-4">Contact U</h1>
           <button class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 text-lg">home</button>
           <button class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 text-lg">Pages</button>
